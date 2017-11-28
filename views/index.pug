@@ -1,0 +1,24 @@
+html(lang='en')
+  include includes/head.pug 
+  body
+    
+    div
+      .container
+        .row.text-center.d-flex.justify-content-center.p-3
+          p.col-md-10 Welcome to LarryChat!
+          br
+          p Please enter your desired username and proceed to ask Larry anything!
+           
+          div(id="messageBox").col-md-10
+    div.p-3
+      .container
+        .row.text-center.d-flex.justify-content-center
+          input(id="input" placeholder="Type a message")
+          #submitChat.button.btn.btn-primary Submit
+    div.p-3
+      .container
+        .row.text-center.d-flex.justify-content-center
+          input(id="name" placeholder="Enter your username")
+          #submitUser.button.btn.btn-primary Submit
+    
+  include includes/scripts.pug
